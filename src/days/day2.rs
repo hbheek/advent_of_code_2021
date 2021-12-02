@@ -11,8 +11,6 @@ pub fn run() {
         .filter_map(|line| line.ok())
         .map(parse_line)
         .collect();
-    
-    // println!("{:?}", commands.len());
 
     let pos = commands
         .iter()
