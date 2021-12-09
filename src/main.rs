@@ -2,7 +2,7 @@ use std::env;
 
 mod days;
 
-use days::{day1, day2, day3, day4};
+use days::*;
 
 fn main() {
     let day: u8 = env::args().nth(1).unwrap().parse().unwrap();
@@ -11,6 +11,7 @@ fn main() {
         2 => day2::run(),
         3 => day3::run(),
         4 => day4::run(),
+        5 => day5::run(),
         _ => println!("A little patience, please!"),
     }
 }
